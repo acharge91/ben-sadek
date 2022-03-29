@@ -1,3 +1,5 @@
+html{scroll-behavior:smooth}
+
 body {
   background-color: #0A0908;
   margin: 0;
@@ -7,12 +9,61 @@ body {
   background-color: #13161a;
 }
 
-.name-title h1 {
+.headers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags {
+  padding-right: 70px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f2ffff;
+  font-weight: 100;
+  font-size: 16px;
+
+}
+
+.banner {
+  background: linear-gradient(180deg, transparent, #0A0908 99%),
+      url("images/IMG_2519.JPG");
+  /* background-image: url("images/IMG_2519.JPG"); */
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.banner h3 {
+  color: #f2ffff;
+  font-family: 'Raleway', sans-serif;
+  padding: 90px 70px;
   margin: 0;
-  padding: 40px 70px;
+  width: 800px;
+  font-size: 25px;
+  text-shadow: 1px 1px 10px#292929;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+
+.name-title {
+  padding: 70px 0px;
+}
+
+.name-title h1 {
+  margin: 0 70px;
   font-family: 'Raleway', sans-serif;
   color: #f2ffff;
   font-size: 30px;
+}
+
+#title {
+  margin-top: 2px;
+  opacity: 0.7;
+  border-top: 1px solid #f2ffff;
+  width: 150px;
 }
 
 .nav-links {
@@ -25,31 +76,91 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #f2ffff;
   text-decoration: none;
+  transition: 0.5s;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+.nav-links a:hover {
+  opacity: 1;
 }
 
 .content-container {
-  height: 100vh;
+  padding: 70px;
+}
+
+.content-container p {
+  color: #f2ffff;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  width: 500px;
+}
+
+.content-container h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #f2ffff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.about {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 200px;
+}
+
+hr {
+  margin: 70px 70px;
+  color: #f2ffff;
+  opacity: 0.5;
+}
+
+.advocacy-info {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advocacy-info img {
+  width: 500px;
+  border-radius: 25px;
+  margin-left: 20px;
 }
 
 .footer {
   background: #13161a;
+  height: 100px;
+  padding: 20px 50px;
+  color: #f2ffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: #f2ffff;
+  justify-content: space-around
 }
 .footer-links {
   display: flex;
   align-items: center;
+}
+
+.footer h2 {
+  font-family: 'Raleway', sans-serif;
+
 }
 .footer-links a {
   color: #f2ffff;
   opacity: 0.50;
   text-decoration: none;
   font-size: 30px;
-  padding: 0px 10px;
+  padding: 0px 20px;
+  transition: 0.5s;
 }
 .footer-links a:hover {
   opacity: 1;
